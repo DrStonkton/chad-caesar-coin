@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHAD Caesar Coin - Hail to the Meme Emperor</title>
+  <style>
+    body {
+      background: url('https://romanempiretimes.com/content/images/size/w2000/format/avif/2024/02/Untitled-design.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Georgia', serif;
+      color: #4a3f35;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+      color: #d4af37;
+      text-transform: uppercase;
+      text-shadow: 2px 2px #4a3f35;
+      background: url('https://www.transparenttextures.com/patterns/ancient-wall.jpg');
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .laurel {
+      font-size: 3em;
+      margin: 5px 0;
+    }
+
+    h2 {
+      margin: 5px 0;
+      font-style: italic;
+      color: #4a3f35;
+      font-size: 1em;
+      text-shadow: 1px 1px #fff;
+    }
+
+    .subheader {
+      font-size: 0.9em;
+      margin: 10px auto;
+      padding: 0 5%;
+      color: #4a3f35;
+      line-height: 1.5;
+      font-style: italic;
+      background: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+
+    #meme-container {
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 250px;
+      width: 80%;
+      border: 5px solid #d4af37;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 5px;
+    }
+
+    .symbols {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 10px 0;
+      font-size: 2em;
+    }
+
+    .symbols span {
+      display: inline-block;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    button {
+      margin: 10px;
+      font-size: 1em;
+      padding: 10px 20px;
+      background: #d4af37;
+      border: 2px solid #4a3f35;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #4a3f35;
+      text-shadow: 1px 1px #fff;
+    }
+
+    .coin {
+      font-size: 1.5em;
+      color: #d4af37;
+      animation: spin 4s infinite linear;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+<h1>CHAD Caesar Coin</h1>
+<div class="laurel">🌿 👑 🌿</div>
+<h2>The Official Coin of the Meme Senate & People of Rome!</h2>
+
+<div class="subheader">
+  Our mission? <strong>PUMP IT LIKE THE ROMANS.</strong><br>
+  HODL in honor of the glorious Roman Empire, conquer every ATH (All-Time High),<br>
+  and smash the barbarian FUDders (Fear, Uncertainty, Doubters) back to the shadows of history.<br><br>
+  They may have sticks and stones, but we have <strong>blockchains and Chad memes.</strong><br>
+  To the moon—or should we say—to the Colosseum! 🏛️🚀
+</div>
+
+<div class="symbols">
+  <span>🏛️</span>
+  <span>⚔️</span>
+  <span>🛡️</span>
+  <span>🪙</span>
+  <span>🏺</span>
+</div>
+
+<div id="meme-container">
+  <img id="random-meme" src="img/Meme1.jpg" alt="Random Meme">
+</div>
+
+<button onclick="spinMeme()">Unleash the Chad Gladiator 🎰</button>
+
+<footer>
+  <div class="coin">⚔️ Hail Caesar! ⚔️</div>
+  © 2024 CHAD Caesar Coin | Glory to the Memepire!
+</footer>
+
+<script>
+  // Array of meme image paths
+  const memes = [
+    'img/Meme1.jpg', 'img/Meme2.jpg', 'img/Meme3.jpg',
+    'img/Meme4.jpg', 'img/Meme5.jpg', 'img/Meme6.jpg',
+    'img/Meme7.jpg', 'img/Meme8.jpg', 'img/Meme9.jpg',
+    'img/Meme10.jpg', 'img/Meme11.jpg', 'img/Meme12.jpg',
+    'img/Meme13.jpg', 'img/Meme14.jpg', 'img/Meme15.jpg',
+    'img/Meme16.jpg', 'img/Meme17.jpg', 'img/Meme18.jpg',
+    'img/Meme19.jpg', 'img/Meme20.jpg', 'img/Meme21.jpg',
+    'img/Meme22.jpg', 'img/Meme23.jpg', 'img/Meme24.jpg',
+    'img/Meme25.jpg', 'img/GIF 1.gif'
+  ];
+
+
+  // Function to randomly spin the meme machine
+  function spinMeme() {
+    const memeContainer = document.getElementById('random-meme');
+    const randomIndex = Math.floor(Math.random() * memes.length);
+    memeContainer.src = memes[randomIndex];
+  }
+</script>
+</body>
+</html>
