@@ -89,6 +89,33 @@
       50% { transform: translateY(-10px); }
     }
 
+    .link-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 15px 0;
+    }
+
+    .link-box {
+      padding: 10px 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .link-box a {
+      text-decoration: none;
+      color: #4a3f35;
+    }
+
+    .link-box:hover {
+      background: #d4af37;
+      color: #fff;
+    }
+
     button {
       margin: 10px;
       font-size: 1em;
@@ -151,6 +178,12 @@
   <img id="random-meme" src="img/Meme1.jpg" alt="Random Meme">
 </div>
 
+<div class="link-row">
+  <div class="link-box"><a href="https://t.me/+7qIGsdejj0E4MTg0" target="_blank">Telegram</a></div>
+  <div class="link-box"><a href="https://x.com/CaesarChadOG" target="_blank">Twitter</a></div>
+  <div class="link-box"><a href="#" target="_blank">PumpFun</a></div>
+</div>
+
 <button onclick="spinMeme()">Unleash the Chad Gladiator 🎰</button>
 
 <footer>
@@ -171,7 +204,6 @@
     'img/Meme22.jpg', 'img/Meme23.jpg', 'img/Meme24.jpg',
     'img/Meme25.jpg', 'img/GIF 1.gif'
   ];
-
 
   // Function to randomly spin the meme machine
   function spinMeme() {
